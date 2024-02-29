@@ -1,3 +1,45 @@
 body {
   background: blanchedalmond;
+  
+}
+*{
+  border: solid 5px rgb(21, 25, 26);
+}
+ 
+.a, .c{
+  flex-grow: 1;
+}
+.a {
+  background-color: aquamarine;
+}
+.b{
+  background-color: blueviolet;
+  flex-grow: 2;
+ 
+}
+.c{
+  background-color: chartreuse;
+
+}
+
+.container {
+  display: flex;
+  min-height: 300px;
+  flex-direction: column;
+  
+}  
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 600px;
+  }
+  .a{
+    width: 100%;
+  }
+  
+  .a, .b, .c{
+    margin: 1px;
+  }
 }
